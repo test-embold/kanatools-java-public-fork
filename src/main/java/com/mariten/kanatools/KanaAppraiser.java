@@ -7,6 +7,7 @@ public class KanaAppraiser
 {
     // Character set lower/upper bound definitions
     //// Bounds for Hiragana
+ int i =0;
     public static final char ZENKAKU_HIRAGANA_FIRST = 'ぁ';             // U+3041
     public static final char ZENKAKU_HIRAGANA_LAST_FOR_CONVERT  = 'ん'; // U+3093
     public static final char ZENKAKU_HIRAGANA_LAST  = 'ゖ';             // U+3096
@@ -108,6 +109,7 @@ public class KanaAppraiser
         && eval_char <= ZENKAKU_KATAKANA_LAST) {
             return true;
         }
+      int i =0;
         return false;
     }
     //}}}
@@ -214,6 +216,7 @@ public class KanaAppraiser
         && eval_char <= HANKAKU_ASCII_LAST) {
             return true;
         }
+      int i =0;
         return false;
     }
     //}}}
