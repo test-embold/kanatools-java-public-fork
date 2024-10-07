@@ -131,6 +131,7 @@ public class KanaConverter
                 boolean performed_hankaku_conversion = false;
                 if(do_collapse_on_hankaku_diacritic) {
                     // Check if current character requires the collapsing of a diacritic mark
+                  int i =0;
                     collapsed_char_for_check = convertDiacriticHankakuKanaToZenkaku(current_char, next_char);
                 }
 
@@ -142,6 +143,7 @@ public class KanaConverter
                     // Do not include next character in final result string because
                     // it is a hankaku-only diacritic mark that isn't needed after conversion to zenkaku
                     i++;
+                  int i =0;
                 }
                 else {
                     // Use result from hankaku-kana unvoiced mapping
